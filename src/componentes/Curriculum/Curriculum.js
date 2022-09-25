@@ -1,29 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Document,Page } from 'react-pdf';
+
 
 const Curriculum = () =>{
-    const url = 
-    "https://cors-anywhere.herokuapp.com/http://www.pdf995.com/samples/pdf.pdf"
-
-    pdfjs.GlobalWorkerOptions.workerSrc = 
-    `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-        const [numPages, setNumPages] = useState(null);
-        const [pageNumber, setPageNumber] = useState(1);
-
-        function onDocumentLoadSuccess({ numPages }) {
-            setNumPages(numPages);
-            setPageNumber(1);
-        }
-    return (
-        <>
-        <div className="main">
-        <Document
-            file={url}
-            onLoadSuccess={onDocumentLoadSuccess}
-            >
-            <Page pageNumber={pageNumber} />
-        </Document>
-        </div>
-        </>
-    );
+    const URL = "https://github.com/Marilinaroman/Mi_Portfolio/blob/main/public/pdf/cv_marilinaroman.pdf"
+        return (
+            <div>
+                <Document file={URL} className="d-flex justify-content-center">
+                    <Page pageNumber={1}/>
+                </Document>
+            </div>
+        );
 }
 export default Curriculum
