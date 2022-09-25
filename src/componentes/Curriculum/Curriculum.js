@@ -1,15 +1,16 @@
 import React from 'react';
-import { Document,Page } from 'react-pdf';
+import './Curriculum.css'
+
 
 
 const Curriculum = () =>{
-    const URL = "https://github.com/Marilinaroman/Mi_Portfolio/blob/main/public/pdf/cv_marilinaroman.pdf"
-        return (
-            <div>
-                <Document file={URL} className="d-flex justify-content-center">
-                    <Page pageNumber={1}/>
-                </Document>
-            </div>
-        );
+
+    const URL = '../pdf/cv_marilinaroman.pdf'
+    
+    return ( 
+        <div className='cv'>
+            <iframe src={URL} title='mi cv'></iframe>
+        </div>
+    );
 }
 export default Curriculum
