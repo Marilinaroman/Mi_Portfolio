@@ -65,3 +65,19 @@
 .mi_presentacion > p{
     margin: 5rem;
 }
+
+@media (max-width:801px)  {
+    .inicio > img, .mi_presentacion > img{
+        width: 25rem;
+        height: 20rem;
+    }
+}
+@media (max-width:480px) {
+    .inicio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mi_presentacion{
+        flex-direction: column;
+    }
+}

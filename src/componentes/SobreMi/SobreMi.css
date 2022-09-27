@@ -1,5 +1,5 @@
 .sobre_mi{
-    height: 150vh;
+    height: auto;
 }
 
 .presentacion_informal{
@@ -47,4 +47,30 @@
     overflow: hidden !important;
     border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 
+}
+
+@media (max-width:801px)  {
+    .presentacion_informal_img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .descripcion{
+        padding: 1rem;
+    }
+}
+@media (max-width:480px) {
+    .sobre_mi{
+        width: 100%;
+    }
+    .presentacion_informal{
+        flex-direction: column;
+    }
+    
+    .presentacion_informal_img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .lenguajes, .herramientas{
+        grid-template-columns: 1fr 1fr;
+    }
 }

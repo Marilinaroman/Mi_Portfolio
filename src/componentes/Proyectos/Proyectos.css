@@ -37,3 +37,24 @@
     padding: 2px 16px;
 }
 
+@media (max-width:801px)  {
+    .container {
+        height: 25rem;
+    }
+}
+
+@media (max-width:480px) {
+    .mis_proyectos{
+        height: auto;
+        flex-direction: column;
+    }
+    .card {
+        margin: 5px !important;
+        width: 60vw;
+        height: 40vh;
+        padding: 2px !important;
+    }
+    .container {
+        height: 20rem;
+    }
+}
