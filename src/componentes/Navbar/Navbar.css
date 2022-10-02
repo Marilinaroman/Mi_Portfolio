@@ -34,3 +34,11 @@ nav > div {
     display: flex;
     align-items: center;
 }
+
+
+@media (max-width:480px) {
+    nav{
+        display: block;
+    }
+    
+}

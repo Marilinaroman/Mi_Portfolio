@@ -78,6 +78,6 @@
         justify-content: center;
     }
     .mi_presentacion{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }

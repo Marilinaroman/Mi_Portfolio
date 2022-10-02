@@ -11,7 +11,7 @@ const Footer = ()=>{
                 <a href="https://www.linkedin.com/in/marilinaflorenciaroman/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a>
                 <a href="mailto:roman.marilinaf@gmail.com" rel="noreferrer"><AiOutlineMail/></a>
             </div>
-            <p>Diseñado y Desarrollado por Roman Marilina</p>
+            <p>Diseñado y Desarrollado por Marilina Roman</p>
         </div>
     )
 }

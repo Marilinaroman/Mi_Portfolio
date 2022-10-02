@@ -1,14 +1,19 @@
 import Conocimientos from './Conocimientos'
-import './SobreMi.css'
+import './SobreMi.css';
+import React, { useEffect } from 'react';
 
 const SobreMi = () =>{
+
+    useEffect(() => {
+        document.title = 'Marilina Roman';
+    },[]);
 
     return(
         <div className='sobre_mi'>
             <h1>Acerca de mi</h1>
             <div className='presentacion_informal'>
                 <p className='descripcion'>
-                    Soy <strong className="purple">Roman Marilina</strong> vivo en Buenos Aires, Argentina.<br/>
+                    Soy <strong className="purple">Marilina Roman</strong> vivo en Buenos Aires, Argentina.<br/>
                     Recientemente realice la carrera de <strong className="purple">Programación Frontend </strong>en Coderhouse.<br/>
                     Actualmente estoy estudiando <strong className="purple">Programación Backend con Node.js</strong> en Coderhouse.<br/>
                     Además de programar, mis actividades favoritas son:<br/>

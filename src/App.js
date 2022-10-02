@@ -5,7 +5,6 @@ import Navbar from './componentes/Navbar/Navbar';
 import Footer from './componentes/Footer/Footer'
 import Proyectos from './componentes/Proyectos/Proyectos';
 import SobreMi from './componentes/SobreMi/SobreMi';
-import Curriculum from './componentes/Curriculum/Curriculum';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path='/' element={<Inicio/>}/>
         <Route path='/SobreMi' element={<SobreMi/>}/>
         <Route path='MisProyectos' element={<Proyectos/>}/>
-        <Route path='/CvRomanMarilina' element={<Curriculum/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

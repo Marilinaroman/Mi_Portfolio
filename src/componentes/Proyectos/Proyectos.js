@@ -8,6 +8,10 @@ const Proyectos = () =>{
 
     const [proyectos, setProyectos] = useState()
 
+    useEffect(() => {
+        document.title = 'Marilina Roman';
+    },[]);
+
     useEffect(()=>{
         showProyectos().then(e =>{
             setProyectos(e)
